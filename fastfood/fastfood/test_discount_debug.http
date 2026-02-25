@@ -1,0 +1,12 @@
+### Test Get Discount by Code to check configuration
+GET http://localhost:5268/api/Discounts/code/KM1
+Authorization: Bearer YOUR_TOKEN_HERE
+
+### Test Get All Discounts
+GET http://localhost:5268/api/Discounts
+Authorization: Bearer YOUR_TOKEN_HERE
+
+### Test Get Discount by ID (replace with actual ID)
+GET http://localhost:5268/api/Discounts/1
+Authorization: Bearer YOUR_TOKEN_HERE
+

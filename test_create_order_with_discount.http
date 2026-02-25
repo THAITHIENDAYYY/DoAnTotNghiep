@@ -1,0 +1,19 @@
+### Test Create Order with Discount
+POST http://localhost:5268/api/Orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQwZWVmYjc0LTQzNWUtNGI5My05YjU5LTZiZGNiZWRjMzNlYyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkbWluQGZhc3Rmb29kLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6IkFkbWluIFVzZXIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkVtcGxveWVlSWQiOiIyIiwiZXhwIjoxNzY0OTMwNjI3LCJpc3MiOiJGYXN0Rm9vZEFQSSIsImF1ZCI6IkZhc3RGb29kQ2xpZW50In0.1qADB9MxoV-BPhTX47_GydoT88BPeXvgeFILTqv2Efw
+
+{
+  "customerId": 1027,
+  "employeeId": 2,
+  "type": 2,
+  "orderItems": [
+    {
+      "productId": 1,
+      "quantity": 1
+    }
+  ],
+  "includeVAT": true,
+  "discountId": 1
+}
+

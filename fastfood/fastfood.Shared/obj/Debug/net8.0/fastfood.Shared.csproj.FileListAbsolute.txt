@@ -1,0 +1,12 @@
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\bin\Debug\net8.0\fastfood.Shared.deps.json
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\bin\Debug\net8.0\fastfood.Shared.dll
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\bin\Debug\net8.0\fastfood.Shared.pdb
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.csproj.AssemblyReference.cache
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.AssemblyInfoInputs.cache
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.AssemblyInfo.cs
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.csproj.CoreCompileInputs.cache
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.dll
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\refint\fastfood.Shared.dll
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\fastfood.Shared.pdb
+D:\DoAnTotNghiep\fastfood\fastfood.Shared\obj\Debug\net8.0\ref\fastfood.Shared.dll

@@ -1,0 +1,284 @@
+### ========================================
+### TABLES API - TEST ENDPOINTS
+### ========================================
+
+@baseUrl = http://localhost:5000
+@apiUrl = {{baseUrl}}/api/tables
+
+### 1. GET - Lấy tất cả bàn
+GET {{apiUrl}}
+
+### 2. GET - Lấy bàn đang hoạt động
+GET {{apiUrl}}/active
+
+### 3. GET - Lấy bàn trống (Available)
+GET {{apiUrl}}/available
+
+### 4. GET - Lấy bàn theo khu vực (FirstFloor = 4)
+GET {{apiUrl}}/by-area/4
+
+### 5. GET - Lấy bàn theo khu vực (VIP = 3)
+GET {{apiUrl}}/by-area/3
+
+### 6. GET - Lấy bàn theo khu vực (Indoor = 1)
+GET {{apiUrl}}/by-area/1
+
+### 7. GET - Chi tiết bàn theo ID
+GET {{apiUrl}}/1
+
+### 8. POST - Tạo bàn mới (Tầng 1)
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B01",
+  "capacity": 4,
+  "status": 1,
+  "area": 4,
+  "location": "Gần quầy thu ngân",
+  "isActive": true,
+  "notes": "Bàn view đẹp"
+}
+
+### 9. POST - Tạo bàn VIP
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "VIP01",
+  "capacity": 8,
+  "status": 1,
+  "area": 3,
+  "location": "Phòng VIP tầng 2",
+  "qrCode": "QR-VIP01-2024",
+  "isActive": true,
+  "notes": "Phòng riêng tư, có điều hòa"
+}
+
+### 10. POST - Tạo bàn ngoài trời
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "OUT01",
+  "capacity": 6,
+  "status": 1,
+  "area": 2,
+  "location": "Sân vườn bên trái",
+  "isActive": true,
+  "notes": "Bàn view hồ nước"
+}
+
+### 11. POST - Tạo nhiều bàn tầng 1
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B02",
+  "capacity": 4,
+  "status": 1,
+  "area": 4,
+  "location": "Giữa phòng",
+  "isActive": true
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B03",
+  "capacity": 2,
+  "status": 1,
+  "area": 4,
+  "location": "Góc trái",
+  "isActive": true
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B04",
+  "capacity": 6,
+  "status": 1,
+  "area": 4,
+  "location": "Gần cửa sổ",
+  "isActive": true
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B05",
+  "capacity": 4,
+  "status": 1,
+  "area": 4,
+  "location": "Giữa phòng",
+  "isActive": true
+}
+
+### 12. POST - Tạo bàn tầng 2
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "T2-01",
+  "capacity": 4,
+  "status": 1,
+  "area": 5,
+  "location": "Tầng 2 - Giữa",
+  "isActive": true
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "T2-02",
+  "capacity": 6,
+  "status": 1,
+  "area": 5,
+  "location": "Tầng 2 - Góc phải",
+  "isActive": true
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "T2-03",
+  "capacity": 2,
+  "status": 1,
+  "area": 5,
+  "location": "Tầng 2 - Gần ban công",
+  "isActive": true
+}
+
+### 13. PUT - Cập nhật thông tin bàn (thay ID = 1 với ID thực tế)
+PUT {{apiUrl}}/1
+Content-Type: application/json
+
+{
+  "tableNumber": "B01",
+  "capacity": 6,
+  "status": 1,
+  "area": 4,
+  "location": "Gần quầy thu ngân (đã mở rộng)",
+  "isActive": true,
+  "notes": "Bàn đã được nâng cấp"
+}
+
+### 14. PATCH - Cập nhật trạng thái bàn thành "Occupied" (Có khách)
+PATCH {{apiUrl}}/1/status
+Content-Type: application/json
+
+2
+
+### 15. PATCH - Cập nhật trạng thái bàn thành "Available" (Trống)
+PATCH {{apiUrl}}/1/status
+Content-Type: application/json
+
+1
+
+### 16. PATCH - Cập nhật trạng thái bàn thành "Reserved" (Đã đặt)
+PATCH {{apiUrl}}/1/status
+Content-Type: application/json
+
+3
+
+### 17. PATCH - Cập nhật trạng thái bàn thành "Cleaning" (Đang dọn)
+PATCH {{apiUrl}}/1/status
+Content-Type: application/json
+
+4
+
+### 18. PATCH - Cập nhật trạng thái bàn thành "Maintenance" (Bảo trì)
+PATCH {{apiUrl}}/1/status
+Content-Type: application/json
+
+5
+
+### 19. PATCH - Vô hiệu hóa/kích hoạt bàn
+PATCH {{apiUrl}}/1/toggle-active
+
+### 20. GET - Tìm kiếm bàn (tìm "VIP")
+GET {{apiUrl}}/search?query=VIP
+
+### 21. GET - Tìm kiếm bàn (tìm "B0")
+GET {{apiUrl}}/search?query=B0
+
+### 22. GET - Tìm kiếm bàn (tìm "gần")
+GET {{apiUrl}}/search?query=gần
+
+### 23. DELETE - Xóa bàn (thay ID = 99 với ID thực tế)
+DELETE {{apiUrl}}/99
+
+### ========================================
+### ENUM VALUES (Để tham khảo)
+### ========================================
+
+# TableStatus:
+# 1 = Available (Trống)
+# 2 = Occupied (Có khách)
+# 3 = Reserved (Đã đặt)
+# 4 = Cleaning (Đang dọn)
+# 5 = Maintenance (Bảo trì)
+
+# TableArea:
+# 1 = Indoor (Trong nhà)
+# 2 = Outdoor (Ngoài trời)
+# 3 = VIP
+# 4 = FirstFloor (Tầng 1)
+# 5 = SecondFloor (Tầng 2)
+# 6 = ThirdFloor (Tầng 3)
+
+### ========================================
+### TEST CASES
+### ========================================
+
+### Test 1: Tạo bàn với số bàn trùng (phải lỗi)
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B01",
+  "capacity": 4,
+  "status": 1,
+  "area": 4,
+  "isActive": true
+}
+
+### Test 2: Tạo bàn với capacity không hợp lệ (phải lỗi)
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "tableNumber": "B99",
+  "capacity": 100,
+  "status": 1,
+  "area": 4,
+  "isActive": true
+}
+
+### Test 3: Cập nhật với số bàn trùng (phải lỗi)
+PUT {{apiUrl}}/2
+Content-Type: application/json
+
+{
+  "tableNumber": "B01",
+  "capacity": 4,
+  "status": 1,
+  "area": 4,
+  "isActive": true
+}
+
+### Test 4: Xóa bàn có đơn hàng đang hoạt động (phải lỗi)
+# Trước tiên tạo order cho bàn, rồi thử xóa
+DELETE {{apiUrl}}/1
+

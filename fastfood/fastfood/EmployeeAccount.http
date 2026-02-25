@@ -1,0 +1,138 @@
+### ============================================
+### EMPLOYEE ACCOUNT MANAGEMENT API TESTS
+### ============================================
+
+@baseUrl = https://localhost:5001/api
+@employeeId = 1
+
+### ============================================
+### 1. CREATE EMPLOYEE ACCOUNT
+### POST /api/Employees/{id}/create-account
+### ============================================
+POST {{baseUrl}}/Employees/{{employeeId}}/create-account
+Content-Type: application/json
+
+{
+  "username": "cashier01",
+  "password": "password123"
+}
+
+### ============================================
+### 2. CHANGE EMPLOYEE PASSWORD
+### POST /api/Employees/{id}/change-password
+### ============================================
+POST {{baseUrl}}/Employees/{{employeeId}}/change-password
+Content-Type: application/json
+
+{
+  "newPassword": "newpassword456",
+  "confirmPassword": "newpassword456"
+}
+
+### ============================================
+### 3. LOGIN WITH EMPLOYEE ACCOUNT
+### POST /api/Auth/login
+### ============================================
+POST {{baseUrl}}/Auth/login
+Content-Type: application/json
+
+{
+  "username": "cashier01",
+  "password": "password123"
+}
+
+### ============================================
+### 4. GET CURRENT USER INFO
+### GET /api/Auth/me
+### (Requires Authorization header with JWT token)
+### ============================================
+GET {{baseUrl}}/Auth/me
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### ============================================
+### 5. GET ALL EMPLOYEES
+### GET /api/Employees
+### ============================================
+GET {{baseUrl}}/Employees
+
+### ============================================
+### 6. GET EMPLOYEE BY ID
+### GET /api/Employees/{id}
+### ============================================
+GET {{baseUrl}}/Employees/{{employeeId}}
+
+### ============================================
+### ERROR TEST CASES
+### ============================================
+
+### Test 1: Create account for non-existent employee
+POST {{baseUrl}}/Employees/9999/create-account
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test123"
+}
+
+### Test 2: Create account when employee already has one
+POST {{baseUrl}}/Employees/{{employeeId}}/create-account
+Content-Type: application/json
+
+{
+  "username": "cashier02",
+  "password": "password123"
+}
+
+### Test 3: Create account with duplicate username
+POST {{baseUrl}}/Employees/2/create-account
+Content-Type: application/json
+
+{
+  "username": "cashier01",
+  "password": "password123"
+}
+
+### Test 4: Change password - passwords don't match
+POST {{baseUrl}}/Employees/{{employeeId}}/change-password
+Content-Type: application/json
+
+{
+  "newPassword": "newpass123",
+  "confirmPassword": "differentpass456"
+}
+
+### Test 5: Change password - too short
+POST {{baseUrl}}/Employees/{{employeeId}}/change-password
+Content-Type: application/json
+
+{
+  "newPassword": "12345",
+  "confirmPassword": "12345"
+}
+
+### Test 6: Change password for employee without account
+POST {{baseUrl}}/Employees/2/change-password
+Content-Type: application/json
+
+{
+  "newPassword": "newpass123",
+  "confirmPassword": "newpass123"
+}
+
+### ============================================
+### EXPECTED RESPONSES
+### ============================================
+
+### Success Responses:
+# Create Account: 200 OK - { "message": "Tạo tài khoản thành công" }
+# Change Password: 200 OK - { "message": "Đổi mật khẩu thành công" }
+# Login: 200 OK - { "token": "...", "userId": "...", ... }
+
+### Error Responses:
+# 404 Not Found - { "message": "Nhân viên không tồn tại" }
+# 400 Bad Request - { "message": "Nhân viên đã có tài khoản đăng nhập" }
+# 409 Conflict - { "message": "Tên đăng nhập đã tồn tại" }
+# 400 Bad Request - { "message": "Mật khẩu xác nhận không khớp" }
+# 400 Bad Request - { "message": "Mật khẩu phải có ít nhất 6 ký tự" }
+# 400 Bad Request - { "message": "Nhân viên chưa có tài khoản đăng nhập" }
+

@@ -1,0 +1,291 @@
+@startuml Database Schema - FastFood Management System
+
+!define PRIMARY_KEY(x) <b><color:#FF6B35>x</color></b>
+!define FOREIGN_KEY(x) <color:#3498db>x</color>
+
+skinparam linetype ortho
+skinparam roundcorner 10
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+
+' ============================================
+' AUTHENTICATION & USER MANAGEMENT
+' ============================================
+
+entity "ApplicationUser" as User {
+  PRIMARY_KEY(Id) : int
+  --
+  UserName : string
+  Email : string
+  PasswordHash : string
+  Role : string
+}
+
+entity "Customer" as Customer {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(UserId) : int? <<FK>>
+  FOREIGN_KEY(CustomerTierId) : int? <<FK>>
+  --
+  Name : string
+  Phone : string
+  Email : string
+  Address : string
+  TotalSpent : decimal(18,2)
+  CreatedAt : DateTime
+}
+
+entity "Employee" as Employee {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(UserId) : int? <<FK>>
+  --
+  Name : string
+  Phone : string
+  Email : string
+  Position : string
+  Salary : decimal(18,2)
+  HireDate : DateTime
+  IsActive : bool
+}
+
+entity "CustomerTier" as CustomerTier {
+  PRIMARY_KEY(Id) : int
+  --
+  Name : string <<unique>>
+  MinimumSpent : decimal(18,2)
+  DiscountPercent : decimal
+  Description : string
+}
+
+' ============================================
+' PRODUCT MANAGEMENT
+' ============================================
+
+entity "Category" as Category {
+  PRIMARY_KEY(Id) : int
+  --
+  Name : string
+  Description : string
+  ImageUrl : string?
+  IsActive : bool
+  DisplayOrder : int
+}
+
+entity "Product" as Product {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(CategoryId) : int <<FK>>
+  --
+  Name : string
+  Description : string?
+  Price : decimal(18,2)
+  ImageUrl : string?
+  SKU : string? <<unique>>
+  StockQuantity : int
+  MinStockLevel : int
+  IsAvailable : bool
+  IsActive : bool
+  CreatedAt : DateTime
+}
+
+entity "Ingredient" as Ingredient {
+  PRIMARY_KEY(Id) : int
+  --
+  Name : string
+  Unit : string
+  Quantity : decimal(18,2)
+  MinQuantity : decimal(18,2)
+  PricePerUnit : decimal(18,2)
+  IsActive : bool
+}
+
+entity "ProductIngredient" as ProductIngredient {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(ProductId) : int <<FK>>
+  FOREIGN_KEY(IngredientId) : int <<FK>>
+  --
+  QuantityRequired : decimal(18,2)
+}
+
+' ============================================
+' ORDER MANAGEMENT
+' ============================================
+
+entity "Order" as Order {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(CustomerId) : int <<FK>>
+  FOREIGN_KEY(EmployeeId) : int? <<FK>>
+  FOREIGN_KEY(TableId) : int? <<FK>>
+  FOREIGN_KEY(DiscountId) : int? <<FK>>
+  --
+  OrderNumber : string <<unique>>
+  Status : OrderStatus
+  Type : OrderType
+  SubTotal : decimal(18,2)
+  TaxAmount : decimal(18,2)
+  DeliveryFee : decimal(18,2)
+  DiscountAmount : decimal(18,2)?
+  TotalAmount : decimal(18,2)
+  Notes : string?
+  OrderDate : DateTime
+  ConfirmedAt : DateTime?
+  PreparedAt : DateTime?
+  DeliveredAt : DateTime?
+}
+
+entity "OrderItem" as OrderItem {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(OrderId) : int <<FK>>
+  FOREIGN_KEY(ProductId) : int <<FK>>
+  --
+  Quantity : int
+  UnitPrice : decimal(18,2)
+  TotalPrice : decimal(18,2)
+  Note : string?
+}
+
+' ============================================
+' PAYMENT MANAGEMENT
+' ============================================
+
+entity "Payment" as Payment {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(OrderId) : int <<FK>>
+  --
+  TransactionId : string <<unique>>
+  Amount : decimal(18,2)
+  PaymentMethod : string
+  Status : PaymentStatus
+  PaymentDate : DateTime
+  Notes : string?
+}
+
+' ============================================
+' TABLE MANAGEMENT
+' ============================================
+
+entity "TableArea" as TableArea {
+  PRIMARY_KEY(Id) : int
+  --
+  Name : string <<unique>>
+  Description : string?
+  DisplayOrder : int
+  IsActive : bool
+}
+
+entity "Table" as Table {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(TableAreaId) : int <<FK>>
+  --
+  TableNumber : string <<unique>>
+  Capacity : int
+  Status : TableStatus
+  Location : string?
+  IsActive : bool
+  Notes : string?
+}
+
+' ============================================
+' DISCOUNT MANAGEMENT
+' ============================================
+
+entity "Discount" as Discount {
+  PRIMARY_KEY(Id) : int
+  --
+  Code : string <<unique>>
+  Name : string
+  DiscountType : DiscountType
+  DiscountValue : decimal(18,2)
+  MinOrderAmount : decimal(18,2)?
+  MaxDiscountAmount : decimal(18,2)?
+  StartDate : DateTime
+  EndDate : DateTime
+  IsActive : bool
+  UsageLimit : int?
+  UsedCount : int
+}
+
+' ============================================
+' WORK SHIFT MANAGEMENT
+' ============================================
+
+entity "WorkShift" as WorkShift {
+  PRIMARY_KEY(Id) : int
+  FOREIGN_KEY(EmployeeId) : int <<FK>>
+  --
+  StartAt : DateTime
+  EndAt : DateTime?
+  Notes : string?
+}
+
+' ============================================
+' RELATIONSHIPS
+' ============================================
+
+' Authentication & User
+User ||--o| Customer : "has"
+User ||--o| Employee : "has"
+Customer }o--|| CustomerTier : "belongs to"
+
+' Product Management
+Category ||--o{ Product : "contains"
+Product ||--o{ ProductIngredient : "has"
+Ingredient ||--o{ ProductIngredient : "used in"
+
+' Order Management
+Customer ||--o{ Order : "places"
+Employee ||--o{ Order : "handles"
+Table ||--o{ Order : "serves"
+Order ||--o{ OrderItem : "contains"
+Product ||--o{ OrderItem : "ordered as"
+Discount ||--o{ Order : "applied to"
+
+' Payment
+Order ||--o{ Payment : "paid by"
+
+' Table Management
+TableArea ||--o{ Table : "contains"
+
+' Work Shift
+Employee ||--o{ WorkShift : "works"
+
+' Many-to-Many Relationships (via junction tables)
+Discount }o--o{ Product : "applies to"
+Discount }o--o{ Category : "applies to"
+Discount }o--o{ CustomerTier : "applies to"
+
+' ============================================
+' LEGEND
+' ============================================
+
+note right of User
+  <b>Authentication & Authorization</b>
+  - JWT Token based
+  - Role-based access control
+end note
+
+note right of Order
+  <b>Core Business Entity</b>
+  - Links Customer, Employee, Table
+  - Contains OrderItems
+  - Has Payments
+  - Can have Discount
+end note
+
+note right of ProductIngredient
+  <b>Recipe Management</b>
+  - Many-to-Many relationship
+  - Tracks ingredients per product
+  - Quantity required
+end note
+
+legend right
+  |= Color |= Meaning |
+  | <#FF6B35>Primary Key</#FF6B35> | Unique identifier |
+  | <#3498db>Foreign Key</#3498db> | Reference to other table |
+  | ||--o{ | One-to-Many |
+  | ||--|| | One-to-One |
+  | }o--o{ | Many-to-Many |
+endlegend
+
+@enduml
+

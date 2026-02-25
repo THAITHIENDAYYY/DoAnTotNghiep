@@ -1,0 +1,153 @@
+### Reports API Testing
+
+@baseUrl = http://localhost:5000/api
+@token = YOUR_JWT_TOKEN_HERE
+
+###
+# 1. Get Dashboard Statistics
+GET {{baseUrl}}/Reports/dashboard
+Authorization: Bearer {{token}}
+
+###
+# 2. Get Sales Report (All)
+POST {{baseUrl}}/Reports/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "startDate": "2025-01-01",
+  "endDate": "2025-12-31"
+}
+
+###
+# 3. Get Sales Report (Filtered by Date Range)
+POST {{baseUrl}}/Reports/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "startDate": "2025-10-01",
+  "endDate": "2025-11-14"
+}
+
+###
+# 4. Get Sales Report (Filtered by Category)
+POST {{baseUrl}}/Reports/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "startDate": "2025-01-01",
+  "endDate": "2025-12-31",
+  "categoryId": 1
+}
+
+###
+# 5. Get Sales Report (Filtered by Employee)
+POST {{baseUrl}}/Reports/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "startDate": "2025-01-01",
+  "endDate": "2025-12-31",
+  "employeeId": 1
+}
+
+###
+# 6. Get Sales Report (All Filters)
+POST {{baseUrl}}/Reports/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "startDate": "2025-10-01",
+  "endDate": "2025-11-14",
+  "categoryId": 1,
+  "employeeId": 1
+}
+
+###
+# 7. Get Sales Report (Last 7 Days)
+POST {{baseUrl}}/Reports/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "startDate": "2025-11-07",
+  "endDate": "2025-11-14"
+}
+
+###
+# 8. Get Revenue Chart (Day)
+GET {{baseUrl}}/Reports/revenue-chart?startDate=2025-10-01&endDate=2025-11-14&groupBy=day
+Authorization: Bearer {{token}}
+
+###
+# 9. Get Revenue Chart (Week)
+GET {{baseUrl}}/Reports/revenue-chart?startDate=2025-10-01&endDate=2025-11-14&groupBy=week
+Authorization: Bearer {{token}}
+
+###
+# 10. Get Revenue Chart (Month)
+GET {{baseUrl}}/Reports/revenue-chart?startDate=2025-01-01&endDate=2025-12-31&groupBy=month
+Authorization: Bearer {{token}}
+
+###
+# 11. Get Product Performance (All)
+GET {{baseUrl}}/Reports/products/performance?startDate=2025-01-01&endDate=2025-12-31
+Authorization: Bearer {{token}}
+
+###
+# 12. Get Product Performance (By Category)
+GET {{baseUrl}}/Reports/products/performance?startDate=2025-01-01&endDate=2025-12-31&categoryId=1
+Authorization: Bearer {{token}}
+
+###
+# 13. Get Product Performance (Last 30 Days)
+GET {{baseUrl}}/Reports/products/performance?startDate=2025-10-15&endDate=2025-11-14
+Authorization: Bearer {{token}}
+
+###
+# Expected Response Format for Sales Report:
+# {
+#   "reportDate": "2025-11-14T10:30:00",
+#   "totalRevenue": 5000000,
+#   "totalOrders": 150,
+#   "totalItems": 450,
+#   "averageOrderValue": 33333.33,
+#   "productSales": [
+#     {
+#       "productId": 1,
+#       "productName": "Burger Bò",
+#       "categoryName": "Burger",
+#       "quantitySold": 50,
+#       "totalRevenue": 1500000,
+#       "averagePrice": 30000
+#     }
+#   ]
+# }
+
+###
+# Expected Response Format for Revenue Chart:
+# [
+#   {
+#     "date": "2025-11-14T00:00:00",
+#     "revenue": 500000,
+#     "orders": 20
+#   }
+# ]
+
+###
+# Expected Response Format for Product Performance:
+# [
+#   {
+#     "productId": 1,
+#     "productName": "Burger Bò",
+#     "categoryName": "Burger",
+#     "quantitySold": 50,
+#     "totalRevenue": 1500000,
+#     "averagePrice": 30000
+#   }
+# ]
+

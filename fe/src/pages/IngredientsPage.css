@@ -1,0 +1,262 @@
+.ingredients-page {
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Search Section */
+.search-section {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-box:focus-within {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.search-icon {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.clear-search {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+
+.clear-search:hover {
+  color: #ff6b35;
+}
+
+.search-stats {
+  color: #666;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.search-stats strong {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.badge-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.text-warning {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center !important;
+  padding: 2rem !important;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.modal-close:hover {
+  background-color: #f0f0f0;
+}
+
+.modal-content form {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table {
+    font-size: 0.875rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+
+  .modal-content {
+    max-width: 100%;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+  }
+
+  .modal-footer .btn {
+    width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+

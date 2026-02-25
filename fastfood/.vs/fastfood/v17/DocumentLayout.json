@@ -1,0 +1,414 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoAnTotNghiep\\fastfood\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\dtos\\addproductingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\dtos\\addproductingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\migrations\\20251110150846_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\migrations\\20251110150846_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|d:\\doantotnghiep\\fastfood\\fastfood.shared\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9B70F8-40C6-4741-9A8B-E7CAB67C2BE4}|fastfood.Shared\\fastfood.Shared.csproj|solutionrelative:fastfood.shared\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\migrations\\20251022172327_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\migrations\\20251022172327_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\migrations\\20251022173536_initial_databse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\migrations\\20251022173536_initial_databse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|d:\\doantotnghiep\\fastfood\\fastfood\\migrations\\20251110153505_initial3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{190E7450-6486-4C74-BAB0-D256ADD3A58C}|fastfood\\fastfood.csproj|solutionrelative:fastfood\\migrations\\20251110153505_initial3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 325,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\Models\\Category.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Category.cs",
+              "RelativeToolTip": "fastfood.Shared\\Models\\Category.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:52:13.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddProductIngredientDto.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\DTOs\\AddProductIngredientDto.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\DTOs\\AddProductIngredientDto.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\DTOs\\AddProductIngredientDto.cs",
+              "RelativeToolTip": "fastfood.Shared\\DTOs\\AddProductIngredientDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:52:03.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAAMVAAAAAAAAAAAjwBEVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-24T16:55:48.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\Models\\Payment.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Payment.cs",
+              "RelativeToolTip": "fastfood.Shared\\Models\\Payment.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T14:48:21.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAADwvxsBAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:22:04.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAADwBAAAAAAAAAADwv0MBAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:18:04.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "fastfood.Shared\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:13:35.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20251110150846_initial2.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251110150846_initial2.cs",
+              "RelativeDocumentMoniker": "fastfood\\Migrations\\20251110150846_initial2.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251110150846_initial2.cs",
+              "RelativeToolTip": "fastfood\\Migrations\\20251110150846_initial2.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwE8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:08:46.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\appsettings.json",
+              "RelativeDocumentMoniker": "fastfood\\appsettings.json",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\appsettings.json",
+              "RelativeToolTip": "fastfood\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-22T17:18:54.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Program.cs",
+              "RelativeDocumentMoniker": "fastfood\\Program.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Program.cs",
+              "RelativeToolTip": "fastfood\\Program.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAKUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:21:13.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20251110153505_initial3.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251110153505_initial3.cs",
+              "RelativeDocumentMoniker": "fastfood\\Migrations\\20251110153505_initial3.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251110153505_initial3.cs",
+              "RelativeToolTip": "fastfood\\Migrations\\20251110153505_initial3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:35:05.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "fastfood\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Properties\\launchSettings.json",
+              "RelativeToolTip": "fastfood\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T16:20:49.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAI0BAAAAAAAAAADwv5QBAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:17:55.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderItemsController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\OrderItemsController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\OrderItemsController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\OrderItemsController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\OrderItemsController.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAIwPQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:17:39.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\PaymentsController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAIAwwFYBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:17:06.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateProductDto.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\DTOs\\CreateProductDto.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\DTOs\\CreateProductDto.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\DTOs\\CreateProductDto.cs",
+              "RelativeToolTip": "fastfood.Shared\\DTOs\\CreateProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:56:43.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAG0BAAAAAAAAAAAvwCABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:56:39.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "fastfood\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "fastfood\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:49:59.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20251022173536_initial_databse.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251022173536_initial_databse.cs",
+              "RelativeDocumentMoniker": "fastfood\\Migrations\\20251022173536_initial_databse.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251022173536_initial_databse.cs",
+              "RelativeToolTip": "fastfood\\Migrations\\20251022173536_initial_databse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:35:36.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\Models\\Order.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Order.cs",
+              "RelativeToolTip": "fastfood.Shared\\Models\\Order.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwCMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:35:20.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\Models\\Employee.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Employee.cs",
+              "RelativeToolTip": "fastfood.Shared\\Models\\Employee.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:35:07.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "fastfood.Shared\\Models\\Product.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood.Shared\\Models\\Product.cs",
+              "RelativeToolTip": "fastfood.Shared\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:33:34.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20251022172327_initial.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251022172327_initial.cs",
+              "RelativeDocumentMoniker": "fastfood\\Migrations\\20251022172327_initial.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Migrations\\20251022172327_initial.cs",
+              "RelativeToolTip": "fastfood\\Migrations\\20251022172327_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:23:27.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "fastfood\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\DoAnTotNghiep\\fastfood\\fastfood\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "fastfood\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T17:11:14.268Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

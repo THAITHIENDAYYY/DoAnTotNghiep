@@ -1,0 +1,244 @@
+### Fast Food Management API - TEST FILE
+### Use REST Client extension in VS Code to run these tests
+
+@baseUrl = http://localhost:5000/api
+@token = YOUR_TOKEN_HERE
+
+### ==========================================
+### 1. AUTHENTICATION
+### ==========================================
+
+### Login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### Get Current User (requires token)
+GET {{baseUrl}}/auth/me
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 2. REPORTS & STATISTICS
+### ==========================================
+
+### Get Dashboard Stats
+GET {{baseUrl}}/reports/dashboard
+Authorization: Bearer {{token}}
+
+### Get Sales Report
+POST {{baseUrl}}/reports/sales
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "startDate": "2024-10-01",
+  "endDate": "2024-10-31",
+  "categoryId": null,
+  "employeeId": null
+}
+
+### Get Revenue Chart (Daily)
+GET {{baseUrl}}/reports/revenue-chart?startDate=2024-10-01&endDate=2024-10-31&groupBy=day
+Authorization: Bearer {{token}}
+
+### Get Revenue Chart (Monthly)
+GET {{baseUrl}}/reports/revenue-chart?startDate=2024-01-01&endDate=2024-12-31&groupBy=month
+Authorization: Bearer {{token}}
+
+### Get Product Performance
+GET {{baseUrl}}/reports/products/performance?startDate=2024-10-01&endDate=2024-10-31
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 3. FILE UPLOAD
+### ==========================================
+
+### Upload Single Image
+POST {{baseUrl}}/fileupload/upload
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="product.jpg"
+Content-Type: image/jpeg
+
+< ./path/to/your/image.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Delete Uploaded File
+DELETE {{baseUrl}}/fileupload/abc123-def456.jpg
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 4. EXCEL EXPORT
+### ==========================================
+
+### Export Sales Report to Excel
+POST {{baseUrl}}/export/sales-report
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "startDate": "2024-10-01",
+  "endDate": "2024-10-31"
+}
+
+### Export Products List
+GET {{baseUrl}}/export/products
+Authorization: Bearer {{token}}
+
+### Export Inventory
+GET {{baseUrl}}/export/inventory
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 5. PRODUCTS (Existing)
+### ==========================================
+
+### Get All Products
+GET {{baseUrl}}/products
+Authorization: Bearer {{token}}
+
+### Get Product by ID
+GET {{baseUrl}}/products/1
+Authorization: Bearer {{token}}
+
+### Create Product
+POST {{baseUrl}}/products
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Gà rán giòn",
+  "description": "Gà rán giòn thơm ngon",
+  "price": 50000,
+  "categoryId": 1,
+  "imageUrl": "/uploads/ga-ran.jpg",
+  "stockQuantity": 100,
+  "isAvailable": true
+}
+
+### ==========================================
+### 6. ORDERS (Existing)
+### ==========================================
+
+### Get All Orders
+GET {{baseUrl}}/orders
+Authorization: Bearer {{token}}
+
+### Get Order by ID
+GET {{baseUrl}}/orders/1
+Authorization: Bearer {{token}}
+
+### Create Order
+POST {{baseUrl}}/orders
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "customerId": 1,
+  "employeeId": 1,
+  "tableId": 5,
+  "orderType": 1,
+  "status": 1,
+  "orderItems": [
+    {
+      "productId": 1,
+      "quantity": 2,
+      "unitPrice": 50000,
+      "notes": "Không hành"
+    }
+  ]
+}
+
+### ==========================================
+### 7. TABLES (Enhanced)
+### ==========================================
+
+### Get All Tables
+GET {{baseUrl}}/tables
+Authorization: Bearer {{token}}
+
+### Get All Table Areas
+GET {{baseUrl}}/tables/areas
+Authorization: Bearer {{token}}
+
+### Create Table Area
+POST {{baseUrl}}/tables/areas
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Rooftop",
+  "description": "Sân thượng view đẹp",
+  "displayOrder": 7,
+  "isActive": true
+}
+
+### ==========================================
+### 8. CATEGORIES
+### ==========================================
+
+### Get All Categories
+GET {{baseUrl}}/categories
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 9. CUSTOMERS
+### ==========================================
+
+### Get All Customers
+GET {{baseUrl}}/customers
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 10. EMPLOYEES
+### ==========================================
+
+### Get All Employees
+GET {{baseUrl}}/employees
+Authorization: Bearer {{token}}
+
+### ==========================================
+### 11. INGREDIENTS
+### ==========================================
+
+### Get All Ingredients
+GET {{baseUrl}}/ingredients
+Authorization: Bearer {{token}}
+
+### Get Low Stock Ingredients
+GET {{baseUrl}}/ingredients/low-stock
+Authorization: Bearer {{token}}
+
+### ==========================================
+### NOTES
+### ==========================================
+
+# 1. Install "REST Client" extension in VS Code
+# 2. Replace {{token}} with actual JWT token from login response
+# 3. Click "Send Request" above each request
+# 4. View response in side panel
+# 5. For file upload, update the file path
+
+### ==========================================
+### SIGNALR CONNECTION (JavaScript)
+### ==========================================
+
+# Connection URL: ws://localhost:5000/hubs/orders
+# 
+# Example:
+# const connection = new signalR.HubConnectionBuilder()
+#     .withUrl("http://localhost:5000/hubs/orders")
+#     .build();
+# 
+# connection.on("ReceiveNewOrder", (data) => {
+#     console.log("New order:", data);
+# });
+# 
+# await connection.start();
+

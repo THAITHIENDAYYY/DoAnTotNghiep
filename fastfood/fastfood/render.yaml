@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: fastfood-api
+    env: dotnet
+    plan: free
+    buildCommand: dotnet restore && dotnet publish -c Release -o ./publish
+    startCommand: dotnet ./publish/fastfood.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ASPNETCORE_URLS
+        value: http://0.0.0.0:$PORT
+      # Thêm các biến môi trường sau khi tạo database
+      # - key: ConnectionStrings__DefaultConnection
+      #   value: your-connection-string-here
+      # - key: Cors__AllowedOrigins__0
+      #   value: https://your-frontend-url.vercel.app
+      # - key: Cors__AllowedOrigins__1
+      #   value: https://your-frontend-url.netlify.app
+    healthCheckPath: /swagger
+
